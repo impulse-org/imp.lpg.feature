@@ -10,7 +10,7 @@
 	</target>
 
 	<target name="all.plugins"
-		depends="build.jikespg.uide">
+		depends="build.jikespg.uide,build.safari.jikespg">
 	</target>
 
 	<target name="build.feature.jar" depends="init" description="Build the feature jar for SAFARI for an update site.">
@@ -45,6 +45,7 @@
 		<mkdir dir="plugins"/>
 		<copy todir="plugins" file="../lpg/lpg_${feature.version}.jar"/>
 		<copy todir="plugins" file="../org.jikespg.uide/org.jikespg.uide_${feature.version}.jar"/>
+		<copy todir="plugins" file="../org.eclipse.safari.jikespg/org.eclipse.safari.jikespg_${feature.version}.jar"/>
 	</target>
 
 	<!-- ========================================================================================= -->
@@ -55,6 +56,12 @@
 	<target name="build.jikespg.uide">
 		<antcall target="build.child">
 			<param name="plugin.id" value="org.jikespg.uide"/>
+		</antcall>
+	</target>
+
+	<target name="build.safari.jikespg">
+		<antcall target="build.child">
+			<param name="plugin.id" value="org.eclipse.safari.jikespg"/>
 		</antcall>
 	</target>
 
