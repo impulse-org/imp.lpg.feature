@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.safari.jikespg"
       label="JikesPG IDE"
-      version="1.0.23"
+      version="1.0.24"
       provider-name="rfuhrer@watson.ibm.com">
 
    <description url="http://orquesta.watson.ibm.com/SAFARI/">
@@ -18,25 +18,25 @@
    </license>
 
    <url>
-      <update label="JikesPG Update Site" url="http://orquesta.watson.ibm.com/eclipse/updates/JikesPG/"/>
+      <update label="SAFARI Update Site" url="http://orquesta.watson.ibm.com/eclipse/updates/SAFARI/"/>
    </url>
 
    <requires>
-      <import feature="org.eclipse.safari.runtime" version="1.0.22"/>
+      <import feature="org.eclipse.safari.runtime" version="1.0.24"/>
    </requires>
 
    <plugin
          id="org.jikespg.uide"
          download-size="0"
          install-size="0"
-         version="1.0.23"
+         version="1.0.24"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.safari.jikespg"
          download-size="0"
          install-size="0"
-         version="1.0.23"
+         version="1.0.24"
          unpack="false"/>
 
 </feature>
