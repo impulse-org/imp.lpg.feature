@@ -20,7 +20,6 @@
 			<fileset dir="plugins" includes="*.jar"/>
 		</delete>
 		<mkdir dir="plugins"/>
-		<copy todir="plugins" file="../lpg/lpg_${feature.version}.jar"/>
 		<copy todir="plugins" file="../org.jikespg.uide/org.jikespg.uide_${feature.version}.jar"/>
 		<copy todir="plugins" file="../org.eclipse.safari.jikespg/org.eclipse.safari.jikespg_${feature.version}.jar"/>
 	</target>
