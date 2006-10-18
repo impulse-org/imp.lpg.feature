@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.safari.jikespg"
       label="JikesPG IDE"
-      version="1.0.31"
+      version="1.0.32"
       provider-name="rfuhrer@watson.ibm.com">
 
    <description url="http://orquesta.watson.ibm.com/SAFARI/">
@@ -22,21 +22,21 @@
    </url>
 
    <requires>
-      <import feature="org.eclipse.safari.runtime" version="1.0.31" match="perfect"/>
+      <import feature="org.eclipse.safari.runtime" version="1.0.32" match="perfect"/>
    </requires>
 
    <plugin
          id="org.jikespg.uide"
          download-size="0"
          install-size="0"
-         version="1.0.31"
+         version="1.0.32"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.safari.jikespg"
          download-size="0"
          install-size="0"
-         version="1.0.31"
+         version="1.0.32"
          unpack="false"/>
 
 </feature>
