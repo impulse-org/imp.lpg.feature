@@ -11,7 +11,7 @@
 	</target>
 
 	<target name="all.plugins"
-		depends="build.jikespg.uide,build.safari.jikespg">
+		depends="build.jikespg.uide,build.safari.jikespg.runtime,build.safari.jikespg">
 	</target>
 
 	<!-- RMF Copy the plugin jars to the 'plugins' folder so that exportUpdate script can see it -->
@@ -22,6 +22,7 @@
 		<mkdir dir="plugins"/>
 		<copy todir="plugins" file="../org.jikespg.uide/org.jikespg.uide_${feature.version}.jar"/>
 		<copy todir="plugins" file="../org.eclipse.safari.jikespg/org.eclipse.safari.jikespg_${feature.version}.jar"/>
+		<copy todir="plugins" file="../org.eclipse.safari.jikespg.runtime/org.eclipse.safari.jikespg.runtime_${feature.version}.jar"/>
 	</target>
 
 	<!-- ========================================================================================= -->
@@ -32,6 +33,12 @@
 	<target name="build.jikespg.uide">
 		<antcall target="build.child">
 			<param name="plugin.id" value="org.jikespg.uide"/>
+		</antcall>
+	</target>
+
+	<target name="build.safari.jikespg.runtime">
+		<antcall target="build.child">
+			<param name="plugin.id" value="org.eclipse.safari.jikespg.runtime"/>
 		</antcall>
 	</target>
 
