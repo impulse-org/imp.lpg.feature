@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.safari.jikespg"
       label="JikesPG Meta-Tooling"
-      version="1.0.40"
+      version="1.0.41"
       provider-name="rfuhrer@watson.ibm.com">
 
    <description url="http://orquesta.watson.ibm.com/SAFARI/">
@@ -32,21 +32,21 @@ except any specific purpose.
          id="org.jikespg.uide"
          download-size="0"
          install-size="0"
-         version="1.0.40"
+         version="1.0.41"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.safari.jikespg"
          download-size="0"
          install-size="0"
-         version="1.0.40"
+         version="1.0.41"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.safari.jikespg.runtime"
          download-size="0"
          install-size="0"
-         version="1.0.40"
+         version="1.0.41"
          unpack="false"/>
 
 </feature>
