@@ -25,7 +25,7 @@ except any specific purpose.
    </url>
 
    <requires>
-      <import feature="org.eclipse.safari.runtime" version="1.0.40" match="perfect"/>
+      <import feature="org.eclipse.safari.runtime" version="1.0.41" match="perfect"/>
    </requires>
 
    <plugin
