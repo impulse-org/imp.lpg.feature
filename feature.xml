@@ -26,7 +26,7 @@ except any specific purpose.
 
    <requires>
       <import feature="org.eclipse.safari.runtime" version="1.0.48" match="perfect"/>
-      <import feature="lpg.runtime.feature" version="2.0.1"/>
+      <import feature="lpg.runtime.feature" version="2.0.2"/>
    </requires>
 
    <plugin
