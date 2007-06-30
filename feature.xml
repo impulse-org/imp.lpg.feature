@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.safari.jikespg"
       label="%featureName"
-      version="1.0.55"
+      version="1.0.56"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -20,7 +20,7 @@
    </url>
 
    <requires>
-      <import feature="org.eclipse.safari.runtime" version="1.0.55" match="perfect"/>
+      <import feature="org.eclipse.safari.runtime" version="1.0.56" match="perfect"/>
       <import feature="lpg.runtime" version="2.0.3"/>
    </requires>
 
@@ -28,21 +28,21 @@
          id="org.jikespg.uide"
          download-size="0"
          install-size="0"
-         version="1.0.55"
+         version="1.0.56"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.safari.jikespg"
          download-size="0"
          install-size="0"
-         version="1.0.55"
+         version="1.0.56"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.safari.jikespg.runtime"
          download-size="0"
          install-size="0"
-         version="1.0.55"
+         version="1.0.56"
          unpack="false"/>
 
 </feature>
