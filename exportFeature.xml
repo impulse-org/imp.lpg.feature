@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="org.eclipse.safari.jikespg.feature" default="build.feature.jar" basedir=".">
-	<import file="../org.eclipse.safari.jikespg.feature/buildCommon.xml"/>
-	<import file="../org.eclipse.safari.update/buildFeatureCommon.xml"/>
+<project name="org.eclipse.imp.lpg.feature" default="build.feature.jar" basedir=".">
+	<import file="../org.eclipse.imp.lpg.feature/buildCommon.xml"/>
+	<import file="../org.eclipse.imp.update/buildFeatureCommon.xml"/>
 
 	<target name="init">
-		<property name="feature.name"        value="org.eclipse.safari.jikespg"/>
-		<property name="feature.version"     value="${jikespg.version}"/>
+		<property name="feature.name"        value="org.eclipse.imp.lpg"/>
+		<property name="feature.version"     value="${lpg.version}"/>
 		<property name="feature.temp.folder" value="${basedir}/feature.temp.folder"/>
 		<property name="feature.destination" value="${basedir}"/>
 	</target>
 
 	<target name="all.plugins"
-		depends="build.jikespg.uide,build.safari.jikespg">
+		depends="build.imp.lpg,build.lpg.metatooling">
 	</target>
 
 	<!-- RMF Copy the plugin jars to the 'plugins' folder so that exportUpdate script can see it -->
@@ -20,24 +20,24 @@
 			<fileset dir="plugins" includes="*.jar"/>
 		</delete>
 		<mkdir dir="plugins"/>
-		<copy todir="plugins" file="../org.jikespg.uide/org.jikespg.uide_${feature.version}.jar"/>
-		<copy todir="plugins" file="../org.eclipse.safari.jikespg/org.eclipse.safari.jikespg_${feature.version}.jar"/>
+		<copy todir="plugins" file="../org.eclipse.imp.lpg.metatooling/org.eclipse.imp.lpg.metatooling_${plugins.version.31}.jar"/>
+		<copy todir="plugins" file="../org.eclipse.imp.lpg/org.eclipse.imp.lpg_${lpg.version}.jar"/>
 	</target>
 
 	<!-- ========================================================================================= -->
 
-	<!-- N.B.: The JikesPG/LPG runtime is not part of this plugin, since other parts of -->
-	<!-- SAFARI need it (e.g. the transformation toolkit).                              -->
+	<!-- N.B.: The LPG runtime is not part of this plugin, since other parts of -->
+	<!-- IMP need it (e.g. the transformation toolkit).                         -->
 
-	<target name="build.jikespg.uide">
+	<target name="build.lpg.metatooling">
 		<antcall target="build.child">
-			<param name="plugin.id" value="org.jikespg.uide"/>
+			<param name="plugin.id" value="org.eclipse.imp.lpg.metatooling"/>
 		</antcall>
 	</target>
 
-	<target name="build.safari.jikespg">
+	<target name="build.imp.lpg">
 		<antcall target="build.child">
-			<param name="plugin.id" value="org.eclipse.safari.jikespg"/>
+			<param name="plugin.id" value="org.eclipse.imp.lpg"/>
 		</antcall>
 	</target>
 </project>

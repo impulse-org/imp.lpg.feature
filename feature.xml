@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
-      id="org.eclipse.safari.jikespg"
+      id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="1.0.56"
+      version="3.2.61"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -15,34 +15,32 @@
    </license>
 
    <url>
-      <update url="http://orquesta.watson.ibm.com/eclipse/updates/SAFARI/"
-              label="%updateSiteName" />
+      <update label="%updateSiteName" url="http://orquesta.watson.ibm.com/eclipse/updates/SAFARI/"/>
    </url>
 
    <requires>
-      <import feature="org.eclipse.safari.runtime" version="1.0.56" match="perfect"/>
-      <import feature="lpg.runtime" version="2.0.3"/>
+      <import feature="lpg.runtime" version="2.0.6"/>
+      <import feature="org.eclipse.imp.runtime" version="3.2.61"/>
    </requires>
 
    <plugin
-         id="org.jikespg.uide"
-         download-size="0"
-         install-size="0"
-         version="1.0.56"
+         id="org.eclipse.imp.lpg.runtime"
+         download-size="461"
+         install-size="461"
+         version="1.0.60"
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.safari.jikespg"
-         download-size="0"
-         install-size="0"
-         version="1.0.56"
-         unpack="false"/>
+         id="org.eclipse.imp.lpg.metatooling"
+         download-size="65"
+         install-size="65"
+         version="1.0.60"/>
 
    <plugin
-         id="org.eclipse.safari.jikespg.runtime"
-         download-size="0"
-         install-size="0"
-         version="1.0.56"
+         id="org.eclipse.imp.lpg"
+         download-size="65"
+         install-size="65"
+         version="3.2.60"
          unpack="false"/>
 
 </feature>

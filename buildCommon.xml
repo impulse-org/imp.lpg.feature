@@ -18,11 +18,11 @@
     <echo message="eclipse.home = ${eclipse.home}"/>
 
     <!-- Following assumes we're invoking the build from within some plugin project's top-level directory -->
-    <xmlproperty file="../org.eclipse.safari.jikespg.feature/feature.xml" prefix="jikespg"/>
+    <xmlproperty file="../org.eclipse.imp.lpg.feature/feature.xml" prefix="lpg"/>
 
-    <echo message="Building for SAFARI JikesPG IDE feature version ${jikespg.feature(version)}"/>
+    <echo message="Building for IMP LPG IDE feature version ${lpg.feature(version)}"/>
 
-    <property name="jikespg.version" value="${jikespg.feature(version)}"/>
+    <property name="lpg.version" value="${lpg.feature(version)}"/>
 
     <path id="path_bootclasspath">
         <fileset dir="${java.home}/lib">
@@ -35,7 +35,7 @@
 
     <property name="bootclasspath" refid="path_bootclasspath"/>
 
-    <condition property="eclipse.home" value="/usr/lib/eclipse-3.1">
+    <condition property="eclipse.home" value="/usr/lib/eclipse-3.2">
         <and>
             <not>
 	        <isset property="eclipse.home"/>
@@ -44,7 +44,7 @@
 	</and>
     </condition>
 
-    <condition property="eclipse.home" value="f:/eclipse-3.1.2">
+    <condition property="eclipse.home" value="f:/eclipse-3.2.2">
         <and>
             <not>
 	        <isset property="eclipse.home"/>
