@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="3.2.61"
+      version="3.2.63"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -20,27 +20,27 @@
 
    <requires>
       <import feature="lpg.runtime" version="2.0.6"/>
-      <import feature="org.eclipse.imp.runtime" version="3.2.61"/>
+      <import feature="org.eclipse.imp.runtime" version="3.2.63"/>
    </requires>
 
    <plugin
          id="org.eclipse.imp.lpg.runtime"
          download-size="461"
          install-size="461"
-         version="1.0.60"
+         version="1.0.63"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.imp.lpg.metatooling"
          download-size="65"
          install-size="65"
-         version="1.0.60"/>
+         version="1.0.63"/>
 
    <plugin
          id="org.eclipse.imp.lpg"
          download-size="65"
          install-size="65"
-         version="3.2.60"
+         version="1.0.63"
          unpack="false"/>
 
 </feature>
