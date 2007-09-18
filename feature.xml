@@ -6,7 +6,7 @@
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
-   <description url="http://orquesta.watson.ibm.com/eclipse/updates/SAFARI/">
+   <description url="http://eclipse-imp.sourceforge.net/updates/">
       %description
    </description>
 
@@ -15,7 +15,7 @@
    </license>
 
    <url>
-      <update label="%updateSiteName" url="http://orquesta.watson.ibm.com/eclipse/updates/SAFARI/"/>
+      <update label="%updateSiteName" url="http://eclipse-imp.sourceforge.net/updates"/>
    </url>
 
    <requires>
@@ -40,7 +40,7 @@
          id="org.eclipse.imp.lpg"
          download-size="65"
          install-size="65"
-         version="1.0.63"
+         version="3.2.63"
          unpack="false"/>
 
 </feature>
