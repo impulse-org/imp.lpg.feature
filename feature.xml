@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="3.2.66"
+      version="3.2.67"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -20,7 +20,7 @@
 
    <requires>
       <import feature="lpg.runtime" version="2.0.8"/>
-      <import feature="org.eclipse.imp.runtime" version="3.2.66"/>
+      <import feature="org.eclipse.imp.runtime" version="3.2.67"/>
    </requires>
 
    <plugin
