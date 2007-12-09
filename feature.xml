@@ -36,11 +36,4 @@
          version="3.2.70"
          unpack="false"/>
 
-   <plugin
-         id="org.eclipse.imp.lpg.runtime"
-         download-size="0"
-         install-size="0"
-         version="1.0.70"
-         unpack="false"/>
-
 </feature>
