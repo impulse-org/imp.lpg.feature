@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feature
-      id="org.eclipse.imp.lpg"
-      label="%featureName"
-      version="3.2.70"
-      provider-name="%providerName"
-      image="eclipse_update_120.jpg">
+<feature id="org.eclipse.imp.lpg" image="eclipse_update_120.jpg" label="%featureName" provider-name="%providerName" version="3.2.71">
 
    <description url="http://eclipse-imp.sourceforge.net/updates/">
       %description
@@ -19,21 +14,12 @@
    </url>
 
    <requires>
-      <import feature="lpg.runtime" version="2.0.10" match="greaterOrEqual"/>
-      <import feature="org.eclipse.imp.runtime" version="3.2.70" match="greaterOrEqual"/>
+      <import feature="lpg.runtime" match="greaterOrEqual" version="2.0.10"/>
+      <import feature="org.eclipse.imp.runtime" match="greaterOrEqual" version="3.2.71"/>
    </requires>
 
-   <plugin
-         id="org.eclipse.imp.lpg.metatooling"
-         download-size="65"
-         install-size="65"
-         version="1.0.70"/>
+   <plugin download-size="65" id="org.eclipse.imp.lpg.metatooling" install-size="65" version="1.0.71"/>
 
-   <plugin
-         id="org.eclipse.imp.lpg"
-         download-size="65"
-         install-size="65"
-         version="3.2.70"
-         unpack="false"/>
+   <plugin download-size="65" id="org.eclipse.imp.lpg" install-size="65" unpack="false" version="3.2.71"/>
 
 </feature>
