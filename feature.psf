@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+    <provider id="org.eclipse.team.cvs.core.cvsnature">
+        <project reference="1.0,:extssh:eclipse-imp.cvs.sourceforge.net:/cvsroot/eclipse-imp,org.eclipse.imp.lpg.metatooling,org.eclipse.imp.lpg.metatooling"/>
+        <project reference="1.0,:extssh:eclipse-imp.cvs.sourceforge.net:/cvsroot/eclipse-imp,org.eclipse.imp.lpg,org.eclipse.imp.lpg"/>
+    </provider>
+</psf>
