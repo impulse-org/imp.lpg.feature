@@ -20,8 +20,15 @@
 			<fileset dir="plugins" includes="*.jar"/>
 		</delete>
 		<mkdir dir="plugins"/>
-		<copy todir="plugins" file="../org.eclipse.imp.lpg.metatooling/org.eclipse.imp.lpg.metatooling_${plugins.version.31}.jar"/>
+		<antcall target="copy.child">
+			<param name="plugin.id" value="org.eclipse.imp.lpg.metatooling"/>
+		</antcall>
+		<antcall target="copy.child">
+			<param name="plugin.id" value="org.eclipse.imp.lpg"/>
+		</antcall>
+<!--	<copy todir="plugins" file="../org.eclipse.imp.lpg.metatooling/org.eclipse.imp.lpg.metatooling_${plugins.version.31}.jar"/>
 		<copy todir="plugins" file="../org.eclipse.imp.lpg/org.eclipse.imp.lpg_${lpg.version}.jar"/>
+  -->
 	</target>
 
 	<!-- ========================================================================================= -->
