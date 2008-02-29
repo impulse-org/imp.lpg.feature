@@ -4,47 +4,46 @@
 	<import file="../org.eclipse.imp.update/buildFeatureCommon.xml"/>
 
 	<target name="init">
-		<property name="feature.name"        value="org.eclipse.imp.lpg"/>
+		<property name="feature.name"        value="${lpg.feature(id)}"/>
 		<property name="feature.version"     value="${lpg.version}"/>
 		<property name="feature.temp.folder" value="${basedir}/feature.temp.folder"/>
 		<property name="feature.destination" value="${basedir}"/>
+
+		<loadfile property="plugins.list" srcfile="feature.xml">
+			<filterchain>
+				<containsregex pattern="&lt;plugin"/>
+				<replaceregex pattern="[ \t]*&lt;plugin .* id=&quot;([^&quot;]*)&quot;.*" replace="\1,"/>
+				<tokenfilter>
+					<filetokenizer/>
+					<replaceregex pattern=",[\r\n]* *" replace="," flags="gs"/>
+				</tokenfilter>
+			</filterchain>
+		</loadfile>
+		<echo message="Feature contains the following plugins: ${plugins.list}"/>
 	</target>
 
-	<target name="all.plugins"
-		depends="build.imp.lpg,build.lpg.metatooling">
+	<target name="build.all.plugins" depends="init">
+		<for param="plugin.id" values="${plugins.list}">
+			<antcall target="build.child">
+				<param name="plugin.id" value="${plugin.id}"/>
+			</antcall>
+		</for>
+	</target>
+
+	<target name="echo.child">
+		<echo message="Processing ${plugin.id}"/>
 	</target>
 
 	<!-- RMF Copy the plugin jars to the 'plugins' folder so that exportUpdate script can see it -->
-	<target name="gather.plugin.jars" depends="all.plugins">
+	<target name="gather.plugin.jars" depends="build.all.plugins">
 		<delete failonerror="false">
 			<fileset dir="plugins" includes="*.jar"/>
 		</delete>
 		<mkdir dir="plugins"/>
-		<antcall target="copy.child">
-			<param name="plugin.id" value="org.eclipse.imp.lpg.metatooling"/>
-		</antcall>
-		<antcall target="copy.child">
-			<param name="plugin.id" value="org.eclipse.imp.lpg"/>
-		</antcall>
-<!--	<copy todir="plugins" file="../org.eclipse.imp.lpg.metatooling/org.eclipse.imp.lpg.metatooling_${plugins.version.31}.jar"/>
-		<copy todir="plugins" file="../org.eclipse.imp.lpg/org.eclipse.imp.lpg_${lpg.version}.jar"/>
-  -->
-	</target>
-
-	<!-- ========================================================================================= -->
-
-	<!-- N.B.: The LPG runtime is not part of this plugin, since other parts of -->
-	<!-- IMP need it (e.g. the transformation toolkit).                         -->
-
-	<target name="build.lpg.metatooling">
-		<antcall target="build.child">
-			<param name="plugin.id" value="org.eclipse.imp.lpg.metatooling"/>
-		</antcall>
-	</target>
-
-	<target name="build.imp.lpg">
-		<antcall target="build.child">
-			<param name="plugin.id" value="org.eclipse.imp.lpg"/>
-		</antcall>
+		<for param="plugin.id" values="${plugins.list}">
+			<antcall target="copy.child">
+				<param name="plugin.id" value="${plugin.id}"/>
+			</antcall>
+		</for>
 	</target>
 </project>
