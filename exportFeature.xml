@@ -12,7 +12,7 @@
 		<loadfile property="plugins.list" srcfile="feature.xml">
 			<filterchain>
 				<containsregex pattern="&lt;plugin"/>
-				<replaceregex pattern="[ \t]*&lt;plugin .* id=&quot;([^&quot;]*)&quot;.*" replace="\1,"/>
+				<replaceregex pattern="[ \t]*&lt;plugin .* id=&quot;([^&quot;]*)&quot;.*" replace="\1," flags="gs"/>
 				<tokenfilter>
 					<filetokenizer/>
 					<replaceregex pattern=",[\r\n]* *" replace="," flags="gs"/>
