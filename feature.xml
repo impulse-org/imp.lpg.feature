@@ -43,4 +43,11 @@
          version="0.1.1"
          unpack="false"/>
 
+   <plugin
+         id="org.eclipse.imp.lpg.runtime"
+         download-size="0"
+         install-size="0"
+         version="0.1.73"
+         unpack="false"/>
+
 </feature>
