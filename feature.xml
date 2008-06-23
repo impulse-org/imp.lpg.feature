@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<feature
-      id="org.eclipse.imp.lpg"
-      label="%featureName"
-      version="0.1.74"
-      provider-name="%providerName"
-      image="eclipse_update_120.jpg">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<feature id="org.eclipse.imp.lpg" image="eclipse_update_120.jpg" label="%featureName" provider-name="%providerName" version="0.1.75">
 
    <description url="http://eclipse-imp.sourceforge.net/updates/">
       %description
@@ -19,35 +14,16 @@
    </url>
 
    <requires>
-      <import feature="lpg.runtime" version="2.0.12" match="greaterOrEqual"/>
-      <import feature="org.eclipse.imp.runtime" version="0.1.74" match="greaterOrEqual"/>
+      <import feature="lpg.runtime" match="greaterOrEqual" version="2.0.12"/>
+      <import feature="org.eclipse.imp.runtime" match="greaterOrEqual" version="0.1.75"/>
    </requires>
 
-   <plugin
-         id="org.eclipse.imp.lpg.metatooling"
-         download-size="65"
-         install-size="65"
-         version="0.1.73"/>
+   <plugin download-size="65" id="org.eclipse.imp.lpg.metatooling" install-size="65" version="0.1.74"/>
 
-   <plugin
-         id="org.eclipse.imp.lpg"
-         download-size="65"
-         install-size="65"
-         version="0.1.73"
-         unpack="false"/>
+   <plugin download-size="65" id="org.eclipse.imp.lpg" install-size="65" unpack="false" version="0.1.74"/>
 
-   <plugin
-         id="org.eclipse.imp.lpg.analysis"
-         download-size="0"
-         install-size="0"
-         version="0.1.1"
-         unpack="false"/>
+   <plugin download-size="0" id="org.eclipse.imp.lpg.analysis" install-size="0" unpack="false" version="0.1.2"/>
 
-   <plugin
-         id="org.eclipse.imp.lpg.runtime"
-         download-size="0"
-         install-size="0"
-         version="0.1.73"
-         unpack="false"/>
+   <plugin download-size="0" id="org.eclipse.imp.lpg.runtime" install-size="0" unpack="false" version="0.1.74"/>
 
 </feature>
