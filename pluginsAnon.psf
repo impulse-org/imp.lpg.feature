@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+    <provider id="org.tigris.subversion.subclipse.core.svnnature">
+        <project reference="0.9.3,http://dev.eclipse.org/svnroot/technology/org.eclipse.imp/org.eclipse.imp.lpg/trunk,org.eclipse.imp.lpg"/>
+        <project reference="0.9.3,http://dev.eclipse.org/svnroot/technology/org.eclipse.imp/org.eclipse.imp.lpg.metatooling/trunk,org.eclipse.imp.lpg.metatooling"/>
+    </provider>
+</psf>
