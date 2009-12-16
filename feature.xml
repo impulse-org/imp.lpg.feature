@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="0.1.91"
+      version="0.1.92"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -42,14 +42,14 @@
          id="org.eclipse.imp.lpg.analysis"
          download-size="0"
          install-size="0"
-         version="0.1.13"
+         version="0.1.14"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.imp.lpg.ide"
          download-size="0"
          install-size="0"
-         version="0.1.87"
+         version="0.1.88"
          unpack="false"/>
 
 </feature>
