@@ -22,6 +22,7 @@
       <import feature="lpg.runtime" version="2.0.17" match="greaterOrEqual"/>
       <import feature="org.eclipse.imp.runtime" version="0.1.102" match="greaterOrEqual"/>
       <import feature="org.eclipse.imp.analysis" version="0.1.7" match="greaterOrEqual"/>
+      <import feature="org.eclipse.imp.metatooling" version="0.1.96" match="greaterOrEqual"/>
    </requires>
 
    <plugin
