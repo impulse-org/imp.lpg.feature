@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="0.1.92.qualifier"
+      version="0.1.93.qualifier"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -20,37 +20,37 @@
 
    <requires>
       <import feature="lpg.runtime" version="2.0.17" match="greaterOrEqual"/>
-      <import feature="org.eclipse.imp.runtime" version="0.1.102" match="greaterOrEqual"/>
-      <import feature="org.eclipse.imp.analysis" version="0.1.7" match="greaterOrEqual"/>
-      <import feature="org.eclipse.imp.metatooling" version="0.1.96" match="greaterOrEqual"/>
+      <import feature="org.eclipse.imp.runtime" version="0.1.104" match="greaterOrEqual"/>
+      <import feature="org.eclipse.imp.analysis" version="0.1.12" match="greaterOrEqual"/>
+      <import feature="org.eclipse.imp.metatooling" version="0.1.97" match="greaterOrEqual"/>
    </requires>
 
    <plugin
          id="org.eclipse.imp.lpg.metatooling"
          download-size="65"
          install-size="65"
-         version="0.1.87.qualifier"
+         version="0.1.88.qualifier"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.imp.lpg"
          download-size="65"
          install-size="65"
-         version="0.1.84.qualifier"
+         version="0.1.85.qualifier"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.imp.lpg.analysis"
          download-size="0"
          install-size="0"
-         version="0.1.14.qualifier"
+         version="0.1.15.qualifier"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.imp.lpg.ide"
          download-size="0"
          install-size="0"
-         version="0.1.88.qualifier"
+         version="0.1.89.qualifier"
          unpack="false"/>
 
 </feature>
