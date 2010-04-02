@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="0.1.93.qualifier"
+      version="0.1.94.qualifier"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -29,7 +29,7 @@
          id="org.eclipse.imp.lpg.metatooling"
          download-size="65"
          install-size="65"
-         version="0.1.88.qualifier"
+         version="0.1.89.qualifier"
          unpack="false"/>
 
    <plugin
