@@ -19,7 +19,8 @@
    </url>
 
    <requires>
-      <import feature="lpg.runtime" version="2.0.17" match="greaterOrEqual"/>
+      <import feature="lpg.runtime" version="2.0.18" match="greaterOrEqual"/>
+      <import feature="lpg.generator" version="2.0.18" match="greaterOrEqual"/>
       <import feature="org.eclipse.imp.runtime" version="0.1.104" match="greaterOrEqual"/>
       <import feature="org.eclipse.imp.analysis" version="0.1.12" match="greaterOrEqual"/>
       <import feature="org.eclipse.imp.metatooling" version="0.1.97" match="greaterOrEqual"/>
