@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="0.1.94.qualifier"
+      version="0.1.95.qualifier"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -52,7 +52,7 @@
          id="org.eclipse.imp.lpg.ide"
          download-size="0"
          install-size="0"
-         version="0.1.89.qualifier"
+         version="0.1.90.qualifier"
          unpack="false"/>
 
 </feature>
