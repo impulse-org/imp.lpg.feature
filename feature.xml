@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="0.1.95.qualifier"
+      version="0.1.96.qualifier"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
