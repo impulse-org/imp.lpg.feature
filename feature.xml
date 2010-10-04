@@ -2,7 +2,7 @@
 <feature
       id="org.eclipse.imp.lpg"
       label="%featureName"
-      version="0.1.96.qualifier"
+      version="0.2.1.qualifier"
       provider-name="%providerName"
       image="eclipse_update_120.jpg">
 
@@ -31,28 +31,28 @@
          id="org.eclipse.imp.lpg.metatooling"
          download-size="65"
          install-size="65"
-         version="0.1.89.qualifier"
+         version="0.2.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.imp.lpg"
          download-size="65"
          install-size="65"
-         version="0.1.85.qualifier"
+         version="0.2.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.imp.lpg.analysis"
          download-size="0"
          install-size="0"
-         version="0.1.15.qualifier"
+         version="0.2.1.qualifier"
          unpack="false"/>
 
    <plugin
          id="org.eclipse.imp.lpg.ide"
          download-size="0"
          install-size="0"
-         version="0.1.90.qualifier"
+         version="0.2.1.qualifier"
          unpack="false"/>
 
 </feature>
